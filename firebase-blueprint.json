@@ -1,0 +1,22 @@
+{
+  "entities": {
+    "LeaderboardEntry": {
+      "title": "Leaderboard Entry",
+      "description": "A high score record for a player",
+      "type": "object",
+      "properties": {
+        "userId": { "type": "string", "description": "The unique ID of the user" },
+        "username": { "type": "string", "description": "The display name of the user" },
+        "score": { "type": "integer", "description": "The high score achieved" },
+        "updatedAt": { "type": "string", "format": "date-time", "description": "When the high score was last recorded" }
+      },
+      "required": ["userId", "username", "score", "updatedAt"]
+    }
+  },
+  "firestore": {
+    "leaderboard": {
+      "schema": "LeaderboardEntry",
+      "description": "Collection of global high scores"
+    }
+  }
+}

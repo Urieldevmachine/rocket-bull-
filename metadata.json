@@ -1,0 +1,6 @@
+{
+  "name": "RocketBull",
+  "description": "An action-packed arcade game where you control a rocket-propelled bull, dodging obstacles and collecting power-ups to achieve the highest score.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
